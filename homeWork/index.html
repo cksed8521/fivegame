@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>五子棋</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0px;
         padding: 0px;
     }
 
-    #chess{
+    #chess {
         position: relative;
         width: 762px;
         height: 762px;
@@ -20,7 +21,7 @@
         background-size: 100% 100%;
     }
 
-    .grid{
+    .grid {
         width: 50px;
         height: 50px;
         position: absolute;
@@ -32,19 +33,21 @@
         line-height: 50px;
         text-align: center;
         color: aqua;
-
     }
 </style>
-<body>
-    <div id="chess"></div>
 
-    
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"
-  ></script>
-  <script src="index.js"></script>
+<body>
+    <div id="chess">
+    </div>
+
+    <button id="start" type="button">另起新局</button>
+    <button id="reset" type="button">重新開始</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </body>
+
 </html>
