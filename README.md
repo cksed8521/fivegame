@@ -4,9 +4,10 @@
 
 程式碼如下為判斷五子棋贏的條件，運用了運算子的優先順序再轉為二元運算子比較。
 
-function checkLine(x, y) {
-    let result1 = 3, result2 = 3, result3 = 3, result4 = 3;
 
+function checkLine(x, y) {
+
+    let result1 = 3, result2 = 3, result3 = 3, result4 = 3;
     for (let i = 0; i < 5; i++) {
         result1 &= y + i > 14 ? 0 : grid[x][y + i].value
         result2 &= x + i > 14 ? 0 : grid[x + i][y].value
